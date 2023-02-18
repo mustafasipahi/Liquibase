@@ -1,0 +1,11 @@
+url: jdbc:mysql://azerloterey-mysql01.mysql.database.azure.com:3306/bankdeposit?useSSL=false&serverTimezone=Asia/Baku
+username: azerlotereyadmin@azerloterey-mysql01
+password: 1qaz!QAZ1qaz
+driver: com.mysql.cj.jdbc.Driver
+
+referenceUrl: hibernate:ejb3:com.entity?dialect=org.hibernate.dialect.MySQL8Dialect&hibernate.physical_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy&hibernate.implicit_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy
+referenceDriver: liquibase.ext.hibernate.database.connection.HibernateDriver
+
+changeLogFile: src/main/resources/liquibase/changelog-master.xml
+diffChangeLogFile: src/main/resources/liquibase/diff-generated.xml
+outputChangeLogFile: src/main/resources/liquibase/existing-generated.xml

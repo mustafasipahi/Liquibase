@@ -1,0 +1,6 @@
+com/Application.class
+com/entity/TransactionEntity.class
+com/converter/IntegerSetConverter.class
+com/entity/FailedTransactionEntity.class
+com/entity/TransactionEntity$TransactionEntityBuilder.class
+com/entity/FailedTransactionEntity$FailedTransactionEntityBuilder.class

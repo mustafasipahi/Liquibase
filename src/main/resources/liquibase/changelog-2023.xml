@@ -1,0 +1,48 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                   https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+
+    <changeSet author="user (generated)" id="1675344117183-1">
+        <createTable tableName="failed_transaction">
+            <column autoIncrement="true" name="id" type="BIGINT">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="created_date" type="datetime"/>
+            <column name="deposit_type" type="INT"/>
+            <column name="last_modified_date" type="datetime"/>
+            <column name="transaction_id" type="VARCHAR(255)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="user (generated)" id="1675344117183-2">
+        <createTable tableName="transaction">
+            <column autoIncrement="true" name="id" type="BIGINT">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="amount" type="DECIMAL(19, 2)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="channel_id" type="INT"/>
+            <column name="created_date" type="datetime"/>
+            <column name="last_modified_date" type="datetime"/>
+            <column name="last_name" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="member_no" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="name" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="transaction_id" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="transaction_time" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="user (generated)" id="1675344117183-3">
+        <addUniqueConstraint columnNames="channel_id, transaction_id" constraintName="UKlarb7tt1f17twgerk9a4uncr" tableName="transaction"/>
+    </changeSet>
+
+</databaseChangeLog>

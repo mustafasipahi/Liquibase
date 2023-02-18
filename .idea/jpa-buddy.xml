@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JpaBuddyIdeaProjectConfig">
+    <option name="defaultUnitInitialized" value="true" />
+    <option name="renamerInitialized" value="true" />
+    <option name="sourceModelValue" value="Default" />
+    <option name="targetDbValue" value="d04dd393-451a-4890-852a-173a5e58a2a3" />
+    <option name="snapshotDbValue" value="d04dd393-451a-4890-852a-173a5e58a2a3" />
+    <option name="snapshotDirValue" value="$PROJECT_DIR$" />
+    <option name="updateChangeLogPath" value="src/main/resources/liquibase/changelog-master.xml" />
+    <option name="updateDbConnectionName" value="d04dd393-451a-4890-852a-173a5e58a2a3" />
+  </component>
+</project>
